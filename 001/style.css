@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #4F46E5;
+    --cor2: #22D3EE;
+    --cor3: #F9FAFB;
+    --cor4: #111827;
+    --cor5: #6B7280;
+    --fonte1: "Poppins", sans-serif;
+    --fonte2: "Inter", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > div#logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    list-style-type: none;
+}
+
+header li {
+    padding: 8px;
+    transition: 0.5s;
+}
+
+header a, li {
+    text-decoration: none;
+    color: var(--cor4);
+    font-family: var(--fonte2);
+    font-weight: 450;
+}
+
+header li:hover {
+    border-radius: 8px;
+    background-color: var(--cor5);
+    color: var(--cor3);
+}
+
+button.startNow {
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    border-radius: 6px;
+}
+
+section#hero {
+    width: 100%;
+    display: flex;
+    height: 700px;
+    padding: 40px;
+}
+
+section#hero > section {
+    text-align: justify;
+    width: 70%;
+}
+
+section#hero > section > h1, p {
+    font-family: var(--fonte1);
+}
+
+section#hero > section > p {
+    font-weight: 450;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+
+section#hero > section > h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+section#hero > div#ilustration {
+    height: 200px;
+    width: 170px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+button#get {
+    height: 35px;
+    width: 120px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+button#learn {
+    height: 35px;
+    width: 120px;
+    background-color: rgb(226, 226, 226);
+    color: var(--cor4);
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+}
